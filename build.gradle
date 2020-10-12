@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        compose_version = '1.0.0-alpha04'
+        navigation_version = '0.4.2'
+        google_service_version = '4.3.4'
+        firestore_version = '21.7.1'
+        ktx_firebase_version = '1.1.1'
+        livedata_version = '2.3.0-beta01'
+    }
+    ext.kotlin_version = "1.4.10"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        // Android gradle plugin
+        classpath "com.android.tools.build:gradle:4.2.0-alpha13"
+        // Kotlin plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Google Services plugin
+        classpath "com.google.gms:google-services:$google_service_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
