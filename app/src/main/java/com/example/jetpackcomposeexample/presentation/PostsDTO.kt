@@ -1,3 +1,3 @@
 package com.example.jetpackcomposeexample.presentation
 
-data class PostsDTO constructor(val messageBody : String = "")
+data class PostsDTO(val messageBody: String? = "")

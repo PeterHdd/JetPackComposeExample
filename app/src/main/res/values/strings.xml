@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">JetPost</string>
+    <string name="main">MainScreen</string>
+    <string name="post">AddPost</string>
 </resources>
